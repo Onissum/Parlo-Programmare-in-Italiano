@@ -89,7 +89,6 @@ colore reset
 Consulta i file di documentazione per maggiori dettagli sul linguaggio e sulle funzionalità:
 
 - **Guida alla Programmazione in Parlo.docx**
-- **Guida alla Programmazione in Parlo.pdf**
 
 Questi file forniscono una panoramica completa della sintassi e degli esempi pratici per utilizzare Parlo.
 
