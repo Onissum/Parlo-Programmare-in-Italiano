@@ -69,7 +69,6 @@ fine_se
 
 colore reset
 \`\`\`
-
 ## Come Usare l'Interprete
 
 1. Clona questo repository:
