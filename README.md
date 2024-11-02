@@ -1,3 +1,4 @@
+
 # Parlo - Programmare in Italiano
 
 Parlo è un linguaggio di programmazione progettato per essere intuitivo e semplice per utenti di lingua italiana. Questo repository contiene l'interprete per eseguire script scritti in Parlo.
@@ -15,7 +16,7 @@ Puoi testare Parlo direttamente su GitPod con un ambiente di sviluppo completo:
 
 ## Esempio di Codice in Parlo
 
-```parlo
+```plaintext
 colore rosso
 stampa =============================
 stampa      Analisi delle Materie    
@@ -64,21 +65,34 @@ altrimenti:
 fine_se
 
 colore reset
-` ``` `
+```
 
-Come Usare l'Interprete
+## Come Usare l'Interprete
 
-Clona questo repository:
-git clone https://github.com/Onissum/Parlo-Programmare-in-Italiano.git
-Spostati nella directory del progetto:
-cd Parlo-Programmare-in-Italiano
-Esegui l'interprete con:
-python interprete_parlo.py
+1. Clona questo repository:
+   ```bash
+   git clone https://github.com/Onissum/Parlo-Programmare-in-Italiano.git
+   ```
 
-Documentazione
+2. Spostati nella directory del progetto:
+   ```bash
+   cd Parlo-Programmare-in-Italiano
+   ```
+
+3. Esegui l'interprete con:
+   ```bash
+   python interprete_parlo.py
+   ```
+
+## Documentazione
+
 Consulta i file di documentazione per maggiori dettagli sul linguaggio e sulle funzionalità:
 
-Guida alla Programmazione in Parlo.docx
+- **Guida alla Programmazione in Parlo.docx**
+- **Guida alla Programmazione in Parlo.pdf**
 
 Questi file forniscono una panoramica completa della sintassi e degli esempi pratici per utilizzare Parlo.
 
+---
+
+Questo README è strutturato per essere facilmente leggibile e fornisce una guida chiara su come utilizzare il tuo progetto.
