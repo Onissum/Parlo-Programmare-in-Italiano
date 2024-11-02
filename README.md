@@ -64,3 +64,20 @@ altrimenti:
 fine_se
 
 colore reset
+
+Come Usare l'Interprete
+
+Clona questo repository:
+git clone https://github.com/Onissum/Parlo-Programmare-in-Italiano.git
+Spostati nella directory del progetto:
+cd Parlo-Programmare-in-Italiano
+Esegui l'interprete con:
+python interprete_parlo.py
+
+Documentazione
+Consulta i file di documentazione per maggiori dettagli sul linguaggio e sulle funzionalità:
+
+Guida alla Programmazione in Parlo.docx
+
+Questi file forniscono una panoramica completa della sintassi e degli esempi pratici per utilizzare Parlo.
+
