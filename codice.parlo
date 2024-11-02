@@ -1,39 +1,122 @@
-colore rosso
-stampa =============================
-stampa      Analisi delle Materie    
-stampa =============================
-stampa Inserisci il nome dello studente:
+colore blu
+stampa =========================================
+stampa                                "La Torre del Mago"               
+stampa =========================================
+stampa "                        ,---. "
+stampa "                       /    |"
+stampa "                      /     |"
+stampa "                     /      |" 
+stampa "                    /       |"
+stampa "               ___,'        |"
+stampa "             <  -'          :"
+stampa "              `-.__..--'``-,_\_"
+stampa "                 |o/ ` :,.)_`>"
+stampa "                 :/ `     ||/)"
+stampa "                 (_.).__,-` |\\"
+stampa "                 /( `.``   `| :"
+stampa "                 \\'`-.)  `  ; ;"
+stampa "                 | `       /-<"
+stampa "                 |     `  /   `."
+stampa " ,-_-..____     /|  `    :__..-'\"
+stampa "/,'-.__\\  ``-./ :`      ;       \\"
+stampa "`\\ `\\  `\\  \\ :  (   `  /  ,   `. \\"
+stampa "  \\` \\   \\   |  | `   :  :     .\\ \\"
+stampa "   \\ `\\_  ))  :  ;     |  |      ): :"
+stampa "  (`-.-'\\ ||  |\\ \\   ` ;  ;       | |"
+stampa "   \\-_   `;;._   ( `  /  /_       | |"
+stampa "    `-.-.// ,'`-._\\__/_,'         ; |"
+stampa "       \\:: :     /     `     ,   /  |"
+stampa "        || |    (        ,' /   /   |"
+stampa "        ||                ,'   /    |"
+
+
+
+colore giallo
+stampa Benvenuto giovane avventuriero!
+stampa Quale è il tuo nome?
 inserisci nome
-stampa Inserisci il voto in Matematica:
-inserisci voto_matematica
-stampa Il voto di {nome} in Matematica è {voto_matematica}
-stampa Inserisci il voto in Scienze:
-inserisci voto_scienze
-stampa Il voto di {nome} in Scienze è {voto_scienze}
-stampa Inserisci il voto in Italiano:
-inserisci voto_italiano
-stampa Il voto di {nome} in Italiano è {voto_italiano}
+
 colore verde
-stampa Analisi dei voti di {nome}:
-colore blu
-stampa --- MATEMATICA ---
-se voto_matematica è maggiore di 8:
-    stampa Ottima prestazione in Matematica!
+stampa Salve {nome}, sei davanti a un'antica torre magica.
+
+colore magenta
+stampa Hai due oggetti magici con te:
+stampa 1: Una bacchetta luminosa
+stampa 2: Una chiave dorata
+stampa Quale oggetto vuoi usare? (inserisci 1 o 2)
+inserisci scelta
+
+se scelta è uguale a 1:
+    colore ciano
+    stampa Agiti la bacchetta luminosa e riveli una porta segreta!
 altrimenti:
-    stampa Prestazione in Matematica nella media o inferiore
+    colore rosso
+    stampa Provi la chiave ma non succede nulla...
 fine_se
-colore blu
-stampa --- SCIENZE ---
-se voto_scienze è maggiore di 8:
-    stampa Ottima prestazione in Scienze!
+
+colore verde
+stampa ----------------------------------------
+stampa Proseguendo nel tuo cammino...
+stampa Davanti a te c'è un guardiano di pietra.
+stampa 1: Provi a combattere
+stampa 2: Provi a parlare
+stampa Cosa fai? (inserisci 1 o 2)
+inserisci azione
+
+se azione è uguale a 2:
+    colore ciano
+    stampa Il guardiano sorride e ti lascia passare!
 altrimenti:
-    stampa Prestazione in Scienze nella media o inferiore
+    colore rosso
+    stampa Il guardiano è troppo forte! Devi trovare un altro modo...
 fine_se
-colore blu
-stampa --- ITALIANO ---
-se voto_italiano è uguale a 6:
-    stampa Prestazione nella media in Italiano
+
+colore magenta
+stampa ----------------------------------------
+stampa Nella stanza successiva trovi uno scrigno.
+stampa Sopra c'è scritto un numero: 7
+stampa Che numero inserisci nella serratura?
+inserisci numero
+
+se numero è uguale a 7:
+    colore ciano
+    stampa Lo scrigno si apre! Hai trovato il tesoro magico!
 altrimenti:
-    stampa Prestazione in Italiano non nella media
+    colore rosso
+    stampa Lo scrigno rimane chiuso... Il tesoro resta un mistero
 fine_se
+
+colore verde
+stampa ----------------------------------------
+stampa Davanti a te c'è una scala che porta in cima alla torre.
+stampa Quanti gradini vuoi salire? (il mago dice che più di 10 è pericoloso!)
+inserisci gradini
+
+se gradini è maggiore di 10:
+    colore rosso
+    stampa Oh no! La scala scompare e devi tornare indietro...
+altrimenti:
+    colore ciano
+    stampa Saggio {nome}! Hai raggiunto una stanza segreta!
+fine_se
+
+colore giallo
+stampa ----------------------------------------
+stampa Per l'ultima prova, devi indovinare l'età del mago.
+stampa Il mago sussurra: "Sono più giovane di 100 anni..."
+stampa Quale pensi sia la sua età?
+inserisci eta_mago
+
+se eta_mago è minore di 100:
+    colore ciano
+    stampa Il mago sorride! Hai superato tutte le prove!
+altrimenti:
+    colore rosso
+    stampa Il mago scuote la testa... Dovrai riprovare un'altra volta
+fine_se
+
+colore blu
+stampa =========================================
+stampa            Fine dell'Avventura           
+stampa =========================================
 colore reset
