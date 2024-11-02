@@ -1,10 +1,6 @@
-Ecco una versione formattata e migliorata del testo per il tuo README:
-
----
-
 # Parlo - Programmare in Italiano
 
-**Parlo** è un linguaggio di programmazione progettato per essere intuitivo e semplice per utenti di lingua italiana. Questo repository contiene l'interprete per eseguire script scritti in Parlo.
+Parlo è un linguaggio di programmazione progettato per essere intuitivo e semplice per utenti di lingua italiana. Questo repository contiene l'interprete per eseguire script scritti in Parlo.
 
 ## Prova Parlo Online
 
@@ -68,7 +64,7 @@ altrimenti:
 fine_se
 
 colore reset
-\`\`\`
+
 ## Come Usare l'Interprete
 
 1. Clona questo repository:
