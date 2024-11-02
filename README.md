@@ -21,13 +21,45 @@ Puoi testare Parlo direttamente su GitPod con un ambiente di sviluppo completo:
 
 Ecco un esempio di codice in Parlo:
 
-stampa Ciao, mondo!
+colore rosso
+stampa =============================
+stampa      Analisi delle Materie    
+stampa =============================
+stampa Inserisci il nome dello studente:
 inserisci nome
-se nome è uguale a "Luca":
-stampa Benvenuto, Luca!
+stampa Inserisci il voto in Matematica:
+inserisci voto_matematica
+stampa Il voto di {nome} in Matematica è {voto_matematica}
+stampa Inserisci il voto in Scienze:
+inserisci voto_scienze
+stampa Il voto di {nome} in Scienze è {voto_scienze}
+stampa Inserisci il voto in Italiano:
+inserisci voto_italiano
+stampa Il voto di {nome} in Italiano è {voto_italiano}
+colore verde
+stampa Analisi dei voti di {nome}:
+colore blu
+stampa --- MATEMATICA ---
+se voto_matematica è maggiore di 8:
+    stampa Ottima prestazione in Matematica!
 altrimenti:
-stampa Utente non riconosciuto.
+    stampa Prestazione in Matematica nella media o inferiore
 fine_se
+colore blu
+stampa --- SCIENZE ---
+se voto_scienze è maggiore di 8:
+    stampa Ottima prestazione in Scienze!
+altrimenti:
+    stampa Prestazione in Scienze nella media o inferiore
+fine_se
+colore blu
+stampa --- ITALIANO ---
+se voto_italiano è uguale a 6:
+    stampa Prestazione nella media in Italiano
+altrimenti:
+    stampa Prestazione in Italiano non nella media
+fine_se
+colore reset
 
 ## Come Usare l'Interprete
 
