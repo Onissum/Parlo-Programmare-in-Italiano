@@ -30,6 +30,7 @@ def traduci_e_esegui_riga_parlo(riga, variabili, colore_corrente=Fore.RESET, sfo
     if riga.startswith("inserisci "):
         nome_variabile = riga[9:].strip()
         valore = input(f"Inserisci il valore per {nome_variabile}: ")
+        # Riconosce numeri interi e float, altrimenti considera il valore come stringa
         try:
             valore_numerico = float(valore)
             if valore_numerico.is_integer():
@@ -37,7 +38,7 @@ def traduci_e_esegui_riga_parlo(riga, variabili, colore_corrente=Fore.RESET, sfo
             else:
                 variabili[nome_variabile] = valore_numerico
         except ValueError:
-            variabili[nome_variabile] = valore
+            variabili[nome_variabile] = valore  # Salva come stringa senza virgolette
         return "", colore_corrente, sfondo_corrente
     
     elif riga.startswith("colore "):
@@ -46,16 +47,21 @@ def traduci_e_esegui_riga_parlo(riga, variabili, colore_corrente=Fore.RESET, sfo
         return "", colore_corrente, sfondo_corrente
     
     elif riga.startswith("se "):
+        # Prepara la condizione per riconoscere le stringhe senza virgolette
         condizione = (riga[3:]
             .replace(" è maggiore di ", " > ")
             .replace(" è minore di ", " < ")
             .replace(" è uguale a ", " == ")
             .replace(":", "")
             .strip())
+        
+        # Aggiunge virgolette a stringhe letterali senza virgolette
         for nome in variabili.keys():
-            condizione = condizione.replace(nome, str(variabili.get(nome, 0)))
+            condizione = condizione.replace(nome, f'variabili["{nome}"]')
+        
         try:
-            return eval(condizione), colore_corrente, sfondo_corrente
+            risultato = eval(condizione)
+            return risultato, colore_corrente, sfondo_corrente
         except Exception as e:
             print(f"Errore nella valutazione della condizione: {e}")
             return False, colore_corrente, sfondo_corrente
@@ -137,3 +143,5 @@ except FileNotFoundError:
     print("File 'codice.parlo' non trovato")
 except Exception as e:
     print(f"Errore durante l'esecuzione: {str(e)}")
+
+
