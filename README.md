@@ -6,6 +6,12 @@ Ecco una versione formattata e migliorata del testo per il tuo README:
 
 **Parlo** è un linguaggio di programmazione progettato per essere intuitivo e semplice per utenti di lingua italiana. Questo repository contiene l'interprete per eseguire script scritti in Parlo.
 
+## Prova Parlo Online
+
+Puoi testare Parlo direttamente su GitPod con un ambiente di sviluppo completo:
+
+[Apri questo progetto su GitPod](https://gitpod.io/#https://github.com/Onissum/Parlo-Programmare-in-Italiano)
+
 ## Caratteristiche
 
 - **Sintassi in Italiano**: I comandi sono in italiano, rendendo la programmazione più accessibile per chi parla italiano.
